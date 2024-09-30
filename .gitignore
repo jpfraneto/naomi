@@ -6,3 +6,5 @@ public/videos
 public/gifs_farcaster
 
 prisma/migrations
+
+utils/url

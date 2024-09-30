@@ -47,14 +47,14 @@ export type VibraContext<T extends string = '/logic/:castHash'> = FrameContext<
 export const higherFrame = new Frog<{
   State: VibraState;
 }>({
-  hub: {
-    apiUrl: "https://hubs.airstack.xyz",
-    fetchOptions: {
-      headers: {
-        "x-airstack-hubs": AIRSTACK_API_KEY,
-      }
-    }
-  },
+  // hub: {
+  //   apiUrl: "https://hubs.airstack.xyz",
+  //   fetchOptions: {
+  //     headers: {
+  //       "x-airstack-hubs": AIRSTACK_API_KEY,
+  //     }
+  //   }
+  // },
   imageOptions,
   imageAspectRatio: "1:1",
   initialState: {

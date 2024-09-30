@@ -23,14 +23,14 @@ const origin = getPublicUrl();
 console.log({ origin });
 
 export const app = new Frog({
-  hub: {
-    apiUrl: "https://hubs.airstack.xyz",
-    fetchOptions: {
-      headers: {
-        "x-airstack-hubs": AIRSTACK_API_KEY,
-      }
-    }
-  },
+  // hub: {
+  //   apiUrl: "https://hubs.airstack.xyz",
+  //   fetchOptions: {
+  //     headers: {
+  //       "x-airstack-hubs": AIRSTACK_API_KEY,
+  //     }
+  //   }
+  // },
   assetsPath: '/',
   basePath: '/',
   origin,
@@ -38,7 +38,7 @@ export const app = new Frog({
 });
 
 app.use('*', cors({
-  origin: ['http://localhost:3000', 'https://poiesis.anky.bot'],
+  origin: ['http://localhost:3000', 'https://poiesis.anky.bot', 'https://afrochicks.xyz', 'https://www.afrochicks.xyz'],
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowHeaders: ['Origin', 'Content-Type', 'Accept', 'Authorization', "x-api-key"],
   exposeHeaders: ['Content-Length', 'X-Requested-With'],
