@@ -90,6 +90,16 @@ const daysInfo: Record<string, DayInfo> = {
     instructions: "https://github.com/jpfraneto/images/blob/main/dayoneinstructions.png?raw=true",
     confirmation: "https://github.com/jpfraneto/images/blob/main/dayonehigher.png?raw=true",
     shareText: "I just finished my first day of the higher athletic challenge with @afrochiks.\n\nAre you ready to join us?\n\nHere is the workout of today!"
+  },
+  "2": {
+    gifUrl: "https://github.com/jpfraneto/images/blob/main/dayone.gif?raw=true",
+    number: 2,
+    day: "tuesday",
+    title: "day 2 - STRENGTH TEST",
+    workout: "STRENGTH TEST",
+    instructions: "https://github.com/jpfraneto/images/blob/main/daytwohigher.png?raw=true",
+    confirmation: "https://github.com/jpfraneto/images/blob/main/dayonehigher.png?raw=true",
+    shareText: "I just finished my second day of the higher athletic challenge with @afrochicks.\n\nAre you ready to join us?\n\nHere is the workout of today!"
   }
 };
 
