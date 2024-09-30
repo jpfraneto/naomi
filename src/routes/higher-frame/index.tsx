@@ -118,7 +118,7 @@ async function generateCompletionResponse(c: FrameContext<{ Variables: NeynarVar
   const qs = {
     text: dayInfo.shareText,
     'embeds[]': [
-      `https://poiesis.anky.bot/higher/${dayInfo.number}`,
+      `https://afrochicks.xyz/higher/${dayInfo.number}`,
     ],
   };
 
