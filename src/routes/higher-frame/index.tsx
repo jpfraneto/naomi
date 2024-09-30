@@ -106,7 +106,6 @@ const daysInfo: Record<string, DayInfo> = {
 higherFrame.frame('/:dayNumber', async (c) => {
   const { dayNumber } = c.req.param();
   const dayInfo = daysInfo[dayNumber];
-  console.log("the day info is: ", dayInfo)
   if (!dayInfo) {
     // Handle case when dayNumber is not found in daysInfo
     return c.res({
@@ -134,7 +133,6 @@ async function generateCompletionResponse(c: FrameContext<{ Variables: NeynarVar
 
   const shareQs = queryString.stringify(qs);
   const warpcastRedirectLink = `https://warpcast.com/~/compose?${shareQs}`;
-  console.log('genereating the completion responseeeee here')
 
   return c.res({
     title: 'Workout Completed',
