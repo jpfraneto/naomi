@@ -1,0 +1,47 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  fid       Int      @id @unique // Farcaster ID
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  workouts     Workout[]
+  streak       Streak?
+  badges       Badge[]
+  currentStreak Int      @default(0)
+}
+
+model Workout {
+  id        String   @id @default(uuid())
+  userId    Int     
+  user      User     @relation(fields: [userId], references: [fid])
+  day       Int
+  completedAt DateTime @default(now())
+}
+
+model Streak {
+  id           String   @id @default(uuid())
+  userId       Int      @unique  
+  user         User     @relation(fields: [userId], references: [fid])
+  currentStreak Int      @default(0)
+  longestStreak Int      @default(0)
+  lastWorkoutDate DateTime?
+}
+
+model Badge {
+  id        String   @id @default(uuid())
+  name      String
+  userId    Int     
+  user      User     @relation(fields: [userId], references: [fid])
+  earnedAt  DateTime @default(now())
+}
