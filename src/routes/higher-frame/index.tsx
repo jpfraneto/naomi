@@ -92,7 +92,7 @@ const daysInfo: Record<string, DayInfo> = {
     shareText: "I just finished my first day of the higher athletic challenge with @afrochiks.\n\nAre you ready to join us?\n\nHere is the workout of today!"
   },
   "2": {
-    gifUrl: "https://github.com/jpfraneto/images/blob/main/dayone.gif?raw=true",
+    gifUrl: "https://github.com/jpfraneto/images/blob/main/naomi_square.gif?raw=true",
     number: 2,
     day: "tuesday",
     title: "day 2 - STRENGTH TEST",
