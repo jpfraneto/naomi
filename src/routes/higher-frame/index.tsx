@@ -98,7 +98,7 @@ const daysInfo: Record<string, DayInfo> = {
     title: "day 2 - STRENGTH TEST",
     workout: "STRENGTH TEST",
     instructions: "https://github.com/jpfraneto/images/blob/main/daytwohigher.png?raw=true",
-    confirmation: "https://github.com/jpfraneto/images/blob/main/dayonehigher.png?raw=true",
+    confirmation: "https://github.com/jpfraneto/images/blob/main/daytwoready.png?raw=true",
     shareText: "I just finished my second day of the higher athletic challenge with @afrochicks.\n\nAre you ready to join us?\n\nHere is the workout of today!"
   }
 };
